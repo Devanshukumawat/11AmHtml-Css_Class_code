@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img{
+            width: 200px;
+            position: relative;
+            transition: transform 5s ;
+            animation-name: spider;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes spider{
+            0%{
+                top: 0px;
+                left: 0px;
+            }
+            25%{
+                left: 500px;
+                top: 400px;
+                transform: rotate(180deg);
+            }
+            50%{
+                left:800px ;
+                top: 0px;
+                transform: rotate(180deg);
+            }
+            75%{
+                left: 0px;
+                top: 0px;
+            }
+            100%{
+                transform: rotate(360deg);
+            }
+        }
+
+    </style>
+</head>
+<body>
+   <img src="./media/pinpng.com-slender-man-png-1137.png" alt="">
+</body>
+</html>
